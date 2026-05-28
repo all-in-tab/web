@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FeatureRequestForm from "./components/FeatureRequestForm";
 
 const FEATURES = [
@@ -74,7 +75,10 @@ export default function LandingPage() {
       {/* 헤더 */}
       <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="text-xl font-bold tracking-tight">올인탭</span>
+          <div className="flex items-center gap-2">
+              <Image src="/logo.png" alt="올인탭 로고" width={32} height={32} className="rounded-lg" />
+              <span className="text-xl font-bold tracking-tight">올인탭</span>
+            </div>
           <nav className="hidden md:flex items-center gap-8 text-sm text-gray-600">
             <a href="#features" className="hover:text-gray-900 transition-colors">기능</a>
             <a href="#pricing" className="hover:text-gray-900 transition-colors">요금제</a>
