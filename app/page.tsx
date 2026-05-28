@@ -1,3 +1,5 @@
+import FeatureRequestForm from "./components/FeatureRequestForm";
+
 const FEATURES = [
   {
     icon: "⭐",
@@ -234,6 +236,8 @@ export default function LandingPage() {
           카카오로 무료 시작하기
         </a>
       </section>
+
+      <FeatureRequestForm />
 
       {/* 푸터 */}
       <footer className="border-t border-gray-100 py-10">

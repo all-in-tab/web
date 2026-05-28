@@ -43,3 +43,4 @@ Thumbs.db
 # Misc
 .vercel
 .turbo
+.env*
